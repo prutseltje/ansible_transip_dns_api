@@ -263,7 +263,7 @@ def main():
             token=dict(required=True, type='str'),
             domain=dict(required=True, type='str'),
             host=dict(required=True, type='str'),
-            expire=dict(required=True, type='int', choices=['60', '300', '3600', '84600']),
+            expire=dict(required=True, type='int', choices=[60, 300, 3600, 84600]),
             type=dict(required=True, type='str', choices=['A', 'AAAA', 'CNAME', 'MX', 'NS', 'TXT', 'SRV']),
             content=dict(required=True, type='str'),
             old_content=dict(required=False, type='str'),
